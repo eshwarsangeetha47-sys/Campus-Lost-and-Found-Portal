@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Items - Campus Lost and Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>Campus Lost & Found</h2>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="browse.html">Browse Items</a>
+                <a href="report.html">Report Item</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Browse Lost and Found Items</h1>
+        <p>Find your missing belongings around campus.</p>
+    </section>
+
+    <section class="search-section">
+        <h2>Search Items</h2>
+
+        <input type="text" id="keyword"
+            placeholder="Search item name or keyword">
+
+        <select id="category">
+            <option value="">All Categories</option>
+            <option value="Bags">Bags</option>
+            <option value="Documents">Documents</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Stationery">Stationery</option>
+            <option value="Personal Items">Personal Items</option>
+        </select>
+
+        <input type="text" id="location"
+            placeholder="Enter location">
+
+        <select id="listingType">
+            <option value="">Lost and Found</option>
+            <option value="Lost">Lost</option>
+            <option value="Found">Found</option>
+        </select>
+
+        <select id="sortDate">
+            <option value="">Sort by Date</option>
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+        </select>
+
+        <button id="searchButton">Search</button>
+    </section>
+
+    <section class="items-section">
+        <h2>Available Campus Items</h2>
+        <div id="itemsContainer"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 Campus Lost and Found Portal</p>
+    </footer>
+
+    <script src="browse.js"></script>
+
+</body>
+</html>

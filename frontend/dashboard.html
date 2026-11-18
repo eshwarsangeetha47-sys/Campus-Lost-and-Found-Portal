@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Campus Lost and Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>Campus Lost & Found</h2>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="browse.html">Browse Items</a>
+                <a href="report.html">Report Item</a>
+                <a href="dashboard.html">Dashboard</a>
+                <button id="logoutButton">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>My Dashboard</h1>
+        <p>View your activity on the Campus Lost and Found Portal.</p>
+    </section>
+
+    <section class="dashboard-container">
+        <h2>Dashboard Overview</h2>
+
+        <div class="dashboard-card">
+            <h3>Total Campus Items</h3>
+            <p id="totalItems">0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>My Submitted Claims</h3>
+            <p id="totalClaims">0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Approved Claims</h3>
+            <p id="approvedClaims">0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Pending Claims</h3>
+            <p id="pendingClaims">0</p>
+        </div>
+    </section>
+
+    <section class="items-section">
+        <h2>My Submitted Claims</h2>
+        <div id="claimsContainer"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 Campus Lost and Found Portal | Sai University</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item - Campus Lost and Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="report-page">
+
+    <header>
+        <nav>
+            <h2>Campus Lost & Found</h2>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="browse.html">Browse Items</a>
+                <a href="report.html">Report Item</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero report-hero">
+        <h1>Report a Lost or Found Item</h1>
+        <p>Help reunite lost belongings with their owners.</p>
+    </section>
+
+    <main class="report-main">
+
+        <section class="report-section">
+            <div class="report-heading">
+                <h2>Item Details</h2>
+                <p>Please provide the details of the lost or found item.</p>
+            </div>
+
+            <form id="reportForm">
+
+                <div class="report-form-grid">
+
+                    <div class="report-field">
+                        <label for="itemName">Item Name</label>
+                        <input type="text" id="itemName"
+                            placeholder="Enter item name" required>
+                    </div>
+
+                    <div class="report-field">
+                        <label for="category">Category</label>
+                        <select id="category" required>
+                            <option value="">Select Category</option>
+                            <option value="Bags">Bags</option>
+                            <option value="Documents">Documents</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Accessories">Accessories</option>
+                            <option value="Stationery">Stationery</option>
+                            <option value="Personal Items">Personal Items</option>
+                        </select>
+                    </div>
+
+                    <div class="report-field">
+                        <label for="description">Description</label>
+                        <textarea id="description"
+                            placeholder="Describe the item" required></textarea>
+                    </div>
+
+                    <div class="report-field">
+                        <label for="location">Location</label>
+                        <input type="text" id="location"
+                            placeholder="Where was it lost or found?" required>
+                    </div>
+
+                    <div class="report-field">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <div class="report-field">
+                        <label for="listingType">Listing Type</label>
+                        <select id="listingType" required>
+                            <option value="">Select Type</option>
+                            <option value="Lost">Lost</option>
+                            <option value="Found">Found</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <button type="submit">Submit Report</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Campus Lost and Found Portal | Sai University</p>
+    </footer>
+
+    <script src="report.js"></script>
+
+</body>
+</html>
